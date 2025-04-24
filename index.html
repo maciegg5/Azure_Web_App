@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My CV</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Jan Kowalski</h1>
+      <p>Data Analyst | Student of Geoinformatics | Football Enthusiast</p>
+    </header>
+
+    <nav>
+      <button onclick="showSection('about')">About</button>
+      <button onclick="showSection('skills')">Skills</button>
+      <button onclick="showSection('experience')">Experience</button>
+      <button onclick="showSection('education')">Education</button>
+    </nav>
+
+    <section id="about" class="active">
+      <h2>About Me</h2>
+      <p>I am a passionate data analyst currently studying Geoinformatics, with hands-on experience in football data analysis and a strong foundation in Python, SQL, and cloud tools like Azure and Databricks.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, SQL, R</li>
+        <li>Machine Learning, Data Visualization</li>
+        <li>Azure, GitHub, Git</li>
+        <li>Web Scraping, API Integration</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p><strong>Data Engineering Intern</strong> - Orlen Południe (2025)<br />Working with flight and football data, building analytical pipelines and dashboards.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>Bachelor in Engineering and Data Analysis</strong> – Krakow University<br />
+      <strong>Master in Geoinformatics (in progress)</strong></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
