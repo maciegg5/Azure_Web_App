@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My CV</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Jan Kowalski</h1>
-      <p>Data Analyst | Student of Geoinformatics | Football Enthusiast</p>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jan Kowalski | CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-container">
+      <aside class="sidebar">
+        <div class="profile-photo">
+          <img src="96497776.jpeg" alt="Jan Kowalski" />
+        </div>
+        <h1>Jan Kowalski</h1>
+        <p>Data Analyst | Geoinformatics Student</p>
+        <nav class="nav-links">
+          <button onclick="showSection('about')">About</button>
+          <button onclick="showSection('skills')">Skills</button>
+          <button onclick="showSection('experience')">Experience</button>
+          <button onclick="showSection('education')">Education</button>
+          <button onclick="showSection('projects')">Projects</button>
+          <button onclick="showSection('contact')">Contact</button>
+        </nav>
+      </aside>
 
-    <nav>
-      <button onclick="showSection('about')">About</button>
-      <button onclick="showSection('skills')">Skills</button>
-      <button onclick="showSection('experience')">Experience</button>
-      <button onclick="showSection('education')">Education</button>
-    </nav>
+      <main class="content">
+        <section id="about" class="section active">
+          <h2>About Me</h2>
+          <p>I am a passionate data analyst currently studying Geoinformatics, with hands-on experience in football data analysis and a strong foundation in Python, SQL, and cloud tools like Azure and Databricks.</p>
+        </section>
 
-    <section id="about" class="active">
-      <h2>About Me</h2>
-      <p>I am a passionate data analyst currently studying Geoinformatics, with hands-on experience in football data analysis and a strong foundation in Python, SQL, and cloud tools like Azure and Databricks.</p>
-    </section>
+        <section id="skills" class="section">
+          <h2>Skills</h2>
+          <ul>
+            <li>Python, SQL, R</li>
+            <li>Machine Learning, Data Visualization</li>
+            <li>Azure, GitHub, Git</li>
+            <li>Web Scraping, API Integration</li>
+          </ul>
+        </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python, SQL, R</li>
-        <li>Machine Learning, Data Visualization</li>
-        <li>Azure, GitHub, Git</li>
-        <li>Web Scraping, API Integration</li>
-      </ul>
-    </section>
+        <section id="experience" class="section">
+          <h2>Experience</h2>
+          <p><strong>Data Engineering Intern</strong> - Orlen Południe (2025)<br />Working with flight and football data, building analytical pipelines and dashboards.</p>
+        </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <p><strong>Data Engineering Intern</strong> - Orlen Południe (2025)<br />Working with flight and football data, building analytical pipelines and dashboards.</p>
-    </section>
+        <section id="education" class="section">
+          <h2>Education</h2>
+          <p><strong>Bachelor in Engineering and Data Analysis</strong> – Krakow University<br />
+          <strong>Master in Geoinformatics (in progress)</strong></p>
+        </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <p><strong>Bachelor in Engineering and Data Analysis</strong> – Krakow University<br />
-      <strong>Master in Geoinformatics (in progress)</strong></p>
-    </section>
-  </div>
+        <section id="projects" class="section">
+          <h2>Projects</h2>
+          <p><strong>Football Analytics Dashboard:</strong> Visualizing match stats and player ratings using StatsBomb data.<br />
+          <strong>Air Quality Modeling:</strong> PM10 prediction with kriging and simulation techniques.<br />
+          <strong>Real-World Evidence Analysis:</strong> Biostatistical reports using R.</p>
+        </section>
 
-  <script src="script.js"></script>
-</body>
+        <section id="contact" class="section">
+          <h2>Contact</h2>
+          <p>Email: jan.kowalski@example.com<br />LinkedIn: linkedin.com/in/jankowalski<br />GitHub: github.com/jankowalski</p>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
